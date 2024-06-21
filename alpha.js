@@ -20,7 +20,11 @@ function removeBgbyId(x){
     elementId.classList.remove('bg-orange-400')
     
 }
+function resetValuebyId(x, value){
+      let h = document.getElementById(x)
+      h.innerText = value //make reusable
 
+}
 function getAlphabet(){
     let alphabet = 'abcdefghijklmnopqrstuvwxyz'
     let split = alphabet.split('')
