@@ -11,6 +11,12 @@ function keyPressEvent(event){
     let playerPressed = event.key;
     //console.log('playPressed', playerPressed)
     let expectedAlphabet = document.getElementById('yShow').innerText.toLowerCase();//imp
+    if(playerPressed === 'Escape'){
+        hidebyId('section2')
+        hidebyId('section1')
+        visiblebyId('section3') //make fun
+        // resetValuebyId('fourteen', 0)
+    }
 
     //console.log(playerPressed,expectedAlphabet)
     if(playerPressed === expectedAlphabet){
@@ -61,6 +67,9 @@ function play1(){ //onclick
      resetValuebyId('life', 3)
      //score
      resetValuebyId('count', 0)
+     //problem
+     let expectedAlphabet = document.getElementById('yShow').innerText.toLowerCase();
+     removeBgbyId(expectedAlphabet)
     continueGame()
 }
 
