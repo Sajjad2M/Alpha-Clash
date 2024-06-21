@@ -15,6 +15,11 @@ function setBgbyId(x){
     elementId.classList.add('bg-orange-400')
     
 }
+function removeBgbyId(x){
+    elementId = document.getElementById(x)
+    elementId.classList.remove('bg-orange-400')
+    
+}
 
 function getAlphabet(){
     let alphabet = 'abcdefghijklmnopqrstuvwxyz'
