@@ -9,14 +9,17 @@ function continueGame(){
 function keyPressEvent(event){
     //  console.log(event)***
     let playerPressed = event.key;
+    
     //console.log('playPressed', playerPressed)
     let expectedAlphabet = document.getElementById('yShow').innerText.toLowerCase();//imp
     if(playerPressed === 'Escape'){
         hidebyId('section2')
         hidebyId('section1')
         visiblebyId('section3') //make fun
-        // resetValuebyId('fourteen', 0)
+        // resetValuebyId('fourteen', 0)b
     }
+    // play again
+    
 
     //console.log(playerPressed,expectedAlphabet)
     if(playerPressed === expectedAlphabet){

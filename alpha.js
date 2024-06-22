@@ -35,3 +35,6 @@ function getAlphabet(){
    return randomAlpha
     
 }
+
+//-----play again---
+
